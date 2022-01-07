@@ -27,4 +27,14 @@ test('Get Block Count', async () => {
   const blocks = await client.getBlockCount();
   expect(blocks).toBeGreaterThan(700000);
 });
+
+test('Get Block hash', async () => {
+  const hash = await client.getBlockHash(1000);
+  expect(hash).toBe('00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09');
+});
+
+test('Get Difficulty', async () => {
+  const difficulty = await client.getDifficulty();
+  expect(difficulty).toBeGreaterThan(0);
+});
 */

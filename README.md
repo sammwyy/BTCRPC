@@ -2,4 +2,20 @@
 
 Bitcoin RPC Wrapper
 
-Work in progres...
+## Methods Wrapped
+
+**Blockchain:**  
+getbestblockhash
+getblock
+getblockchaininfo
+getblockcount
+getblockfilter
+getblockhash
+getblockheader
+getblockstats
+getchaintips
+getchaintxstats
+getdifficulty
+
+**Wallet:**  
+getaddressinfo

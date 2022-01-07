@@ -1,19 +1,6 @@
-export default interface IBlock {
-  hash: string;
-  confirmations: number;
-  height: number;
-  version: number;
-  versionHex: string;
-  merkleroot: string;
-  time: number;
-  mediantime: number;
-  nonce: number;
-  bits: string;
-  difficulty: number;
-  chainwork: string;
-  nTx: number;
-  previousblockhash: string;
-  nextblockhash: string;
+import IBlockHeader from './IBlockHeader';
+
+export default interface IBlock extends IBlockHeader {
   strippedsize: number;
   size: number;
   weight: number;
